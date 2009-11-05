@@ -1,0 +1,40 @@
+body {
+  background-color:#193642;
+  padding:0;
+  margin:0;
+}
+
+h1 {
+  border-top:2px solid #40484c;
+  margin:0;
+  padding-top:10px;
+  padding-left:30px;
+  font-family:arial,sans-serif;
+  font-weight:normal;
+  color:#b6b6b6;
+}
+
+div#header {
+  padding:0 10px;
+}
+
+div#movies-background {
+  padding:5px;
+  background-color:#000;
+}
+
+div#movies-frame {
+  border:1px solid white;
+  width:75%;
+  min-width:600px;
+  margin:0 auto;
+  overflow:hidden;
+}
+
+div#movies {
+  width:1000%;
+}
+
+div#movies object{
+  padding: 20px;
+}
