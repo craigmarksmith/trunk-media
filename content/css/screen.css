@@ -26,16 +26,19 @@ div#movies-background {
 
 div#movies-frame{
   margin:0 auto;
-  width:800px;
+  width:820px;
 }
 
 div#movies-frame a{
   float:left;
+  width:50px;
+  border:1px solid red;
 }
 
 div#movies-window {
+  height:290px;
   overflow:hidden;
-  width:95%;
+  width:700px;
   float:left;
 }
 

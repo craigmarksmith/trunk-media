@@ -7,11 +7,11 @@ TrunkFilm.Movies = {
   },
   
   scrollLeft: function(){
-    TrunkFilm.Movies.scroll('-=500px');
+    TrunkFilm.Movies.scroll('-=550px');
   },
   
   scrollRight: function(){
-    TrunkFilm.Movies.scroll('+=500px');
+    TrunkFilm.Movies.scroll('+=550px');
   },
   
   scroll: function(scroll_amount){

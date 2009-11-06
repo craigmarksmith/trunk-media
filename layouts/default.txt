@@ -28,7 +28,7 @@ filter:    erb
     <div id='movies-frame'>
       <a href='#' id='scroll-left'><<</a>
       <div id='movies-window'>
-        <div id='movies' style='margin-left:125px'>
+        <div id='movies' style='margin-left:75px'>
           <object width="500" height="281">
             <param name="allowfullscreen" value="true" />
             <param name="allowscriptaccess" value="always" />
