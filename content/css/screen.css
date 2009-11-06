@@ -36,9 +36,13 @@ div#movies-frame a{
 }
 
 div#movies-window {
+  background-image:url('/images/trunk-logo.jpg');
+  background-repeat:no-repeat;
+  background-position:center;
+
   height:290px;
   overflow:hidden;
-  width:700px;
+  width:550px;
   float:left;
 }
 
@@ -47,5 +51,7 @@ div#movies {
 }
 
 div#movies object{
-  padding: 25px;
+  padding:100px;
+  margin:0;
+  border:0;
 }

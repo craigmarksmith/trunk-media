@@ -9,14 +9,14 @@ TrunkFilm.Movies = {
   
   scrollLeft: function(){
     if(current_position > 0){
-      TrunkFilm.Movies.scroll('+=550px');
+      TrunkFilm.Movies.scroll('+=703px');
       current_position -= 1;
     }
   },
   
   scrollRight: function(){
     if(current_position < ($('#movies object').size()-1)){
-      TrunkFilm.Movies.scroll('-=550px');
+      TrunkFilm.Movies.scroll('-=703px');
       current_position += 1;
     }
   },
