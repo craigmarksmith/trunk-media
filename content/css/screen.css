@@ -21,14 +21,22 @@ div#header {
 div#movies-background {
   padding:5px;
   background-color:#000;
+  height:290px;
 }
 
-div#movies-frame {
-  border:1px solid white;
-  width:75%;
-  min-width:600px;
+div#movies-frame{
   margin:0 auto;
+  width:800px;
+}
+
+div#movies-frame a{
+  float:left;
+}
+
+div#movies-window {
   overflow:hidden;
+  width:95%;
+  float:left;
 }
 
 div#movies {
@@ -36,5 +44,5 @@ div#movies {
 }
 
 div#movies object{
-  padding: 20px;
+  padding: 25px;
 }
