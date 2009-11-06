@@ -2,16 +2,23 @@ TrunkFilm = {}
 TrunkFilm.Movies = {
   
   init: function(){
+    current_position = 0;
     $('#scroll-left').click(TrunkFilm.Movies.scrollLeft);
     $('#scroll-right').click(TrunkFilm.Movies.scrollRight);
   },
   
   scrollLeft: function(){
-    TrunkFilm.Movies.scroll('-=550px');
+    if(current_position > 0){
+      TrunkFilm.Movies.scroll('+=550px');
+      current_position -= 1;
+    }
   },
   
   scrollRight: function(){
-    TrunkFilm.Movies.scroll('+=550px');
+    if(current_position < ($('#movies object').size()-1)){
+      TrunkFilm.Movies.scroll('-=550px');
+      current_position += 1;
+    }
   },
   
   scroll: function(scroll_amount){
