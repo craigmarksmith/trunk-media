@@ -36,7 +36,7 @@ div#movies-frame a{
 }
 
 div#movies-window {
-  background-image:url('/images/trunk-logo.jpg');
+  background-image:url('images/trunk-logo.jpg');
   background-repeat:no-repeat;
   background-position:center;
 

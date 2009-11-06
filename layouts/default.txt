@@ -21,7 +21,7 @@ filter:    erb
 </head>
 <body>
   <div id='header'>
-    <img src="/images/trunk-logo.jpg"/>
+    <img src="images/trunk-logo.jpg"/>
   </div>
   <h1>film.</h1>
   <div id='movies-background'>
