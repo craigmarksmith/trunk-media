@@ -23,7 +23,6 @@ filter:    erb
   <div id='header'>
     <img src="images/trunk-logo.jpg"/>
   </div>
-  <h1>film.</h1>
   <div id='movies-background'>
     <div id='movies-frame'>
       <a href='#' id='scroll-left'><<</a>
