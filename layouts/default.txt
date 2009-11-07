@@ -47,9 +47,9 @@ filter:    erb
       </div>
       <ul id="movies-nagivation">
         <li><a href='#' id='scroll-left'>scroll left</a></li>
-        <li><a href='#' class='scroll-ball selected'>scroll to here</a></li>
-        <% 2.upto(urls.size).each do %>
-          <li><a href='#' class='scroll-ball'>scroll to here</a></li>
+        <li><a href='#' class='scroll-ball selected'>0</a></li>
+        <% 1.upto(urls.size-1).each do |n| %>
+          <li><a href='#' class='scroll-ball'><%= n %></a></li>
         <% end %>
         <li><a href='#' id='scroll-right'>scroll right</a></li>
       </ul>

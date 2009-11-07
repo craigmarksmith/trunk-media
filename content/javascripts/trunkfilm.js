@@ -5,6 +5,7 @@ TrunkFilm.Movies = {
     current_position = 0;
     $('#scroll-left').click(TrunkFilm.Movies.scrollLeft);
     $('#scroll-right').click(TrunkFilm.Movies.scrollRight);
+    $('.scroll-ball').click(TrunkFilm.Movies.scrollToMe);
   },
 
   scrollLeft: function(){
@@ -22,6 +23,25 @@ TrunkFilm.Movies = {
       current_position += 1;
       TrunkFilm.Movies.selectScrollBall(current_position, current_position-1);
     }
+    return false;
+  },
+
+  scrollToMe: function(){
+
+    var old_current_position = current_position;
+    current_position = parseInt(this.text);
+
+    if(old_current_position == current_position)
+      return;
+
+    $('.scroll-ball').removeClass('selected');
+    $($('.scroll-ball')[current_position]).addClass('selected');
+
+    sign = old_current_position < current_position ? '+' : '-';
+    amount_moved = old_current_position < current_position ? old_current_position-current_position : current_position-old_current_position
+    amount_to_move = 703*amount_moved;
+    TrunkFilm.Movies.scroll(sign+'='+amount_to_move+'px');
+
     return false;
   },
 
