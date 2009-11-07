@@ -46,18 +46,21 @@ div#header img#elephant {
 div#movies-background {
   padding:5px;
   background-color:#000;
-  height:300px;
+  height:385px;
 }
 
 div#movies-frame{
   margin:0 auto;
-  width:820px;
+  width:550px;
 }
 
-div#movies-frame a{
-  float:left;
-  width:50px;
-  border:1px solid red;
+div#movies-frame div#movies-nagivation a {
+  border:0;
+  outline:none;
+}
+
+div#movies-frame div#movies-nagivation a img{
+  border:0;
 }
 
 div#movies-window {
@@ -68,7 +71,8 @@ div#movies-window {
   height:290px;
   overflow:hidden;
   width:550px;
-  float:left;
+  padding-top:5px;
+  margin-top:20px;
 }
 
 div#movies {

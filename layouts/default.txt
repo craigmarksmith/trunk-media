@@ -27,7 +27,6 @@ filter:    erb
   </div>
   <div id='movies-background'>
     <div id='movies-frame'>
-      <a href='#' id='scroll-left'><<</a>
       <div id='movies-window'>
         <div id='movies' style='margin-left:-75px'>
           <object width="500" height="281">
@@ -50,7 +49,10 @@ filter:    erb
           </object>
         </div>
       </div>
-      <a href='#' id='scroll-right'>>></a>
+      <div id="movies-nagivation">
+        <a href='#' id='scroll-left'><img src="images/arrow_l.png" alt="scroll"/></a>
+        <a href='#' id='scroll-right'><img src="images/arrow_r.png" alt="scroll"/></a>
+      </div>
     </div>
   </div>
 </body>
