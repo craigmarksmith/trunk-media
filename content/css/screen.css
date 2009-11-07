@@ -76,7 +76,7 @@ div#movies-window {
 }
 
 div#movies {
-  width:1000%;
+  width:1000%; /* needs to be massive so all the vids can cram in to it.*/
 }
 
 div#movies object{
