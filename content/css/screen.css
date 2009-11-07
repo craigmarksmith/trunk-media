@@ -33,7 +33,8 @@ div#header a#trunk-logo img {
 div#header div#contact-details {
   color:#b6b6b6;
   float:right;
-  margin:20px 55px 0 0;
+  margin:13px 55px 0 0;
+  font-size:11pt;
 }
 
 div#header img#elephant {
