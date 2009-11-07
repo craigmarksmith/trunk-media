@@ -12,6 +12,7 @@ TrunkFilm.Movies = {
       TrunkFilm.Movies.scroll('+=703px');
       current_position -= 1;
     }
+    return false;
   },
   
   scrollRight: function(){
@@ -19,6 +20,7 @@ TrunkFilm.Movies = {
       TrunkFilm.Movies.scroll('-=703px');
       current_position += 1;
     }
+    return false;
   },
   
   scroll: function(scroll_amount){
