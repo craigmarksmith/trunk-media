@@ -15,7 +15,17 @@ h1 {
 }
 
 div#header {
-  padding:0 10px;
+  width:100%;
+  height:180px;
+  background-image:url('../images/bluewood.png');
+  background-repeat:no-repeat;
+  background-position:center left;
+}
+
+div#header img {
+  position:absolute;
+  left: 20px;
+  top: 69px;
 }
 
 div#movies-background {
