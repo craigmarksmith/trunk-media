@@ -110,9 +110,3 @@ ul#movies-nagivation li a#scroll-left {
 ul#movies-nagivation li a#scroll-right {
   background-image:url('../images/arrow-r.png');
 }
-
-/*a.scroll-ball {*/
-/*  background-image:url('../images/scroll-ball.png');*/
-/*  background-repeat:no-repeat;*/
-/*  background-position:center;*/
-/*}*/
