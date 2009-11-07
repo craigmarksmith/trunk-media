@@ -86,10 +86,9 @@ ul#movies-nagivation li a {
   height:0;
   float:left;
   overflow:hidden;
-  
+  outline:none;
   padding-top:55px;
   width:100%;
-  
   background-image:url('../images/scroll-ball.png');
   background-repeat:no-repeat;
   background-position:center;
