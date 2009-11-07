@@ -2,6 +2,8 @@ body {
   background-color:#193642;
   padding:0;
   margin:0;
+  font-family:arial,sans-serif;
+  font-weight:normal;
 }
 
 h1 {
@@ -9,8 +11,6 @@ h1 {
   margin:0;
   padding-top:10px;
   padding-left:30px;
-  font-family:arial,sans-serif;
-  font-weight:normal;
   color:#b6b6b6;
 }
 
@@ -28,6 +28,12 @@ div#header img {
   left:20px;
   top:56px;
   border:0;
+}
+
+div#header div#contact-details {
+  color:#b6b6b6;
+  float:right;
+  margin:20px 15px 0 0;
 }
 
 div#movies-background {
