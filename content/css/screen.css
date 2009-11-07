@@ -17,13 +17,13 @@ h1 {
 div#header {
   width:100%;
   height:180px;
-  margin-bottom:40px;
+  margin-bottom:80px;
   background-image:url('../images/bluewood.png');
   background-repeat:no-repeat;
   background-position:center left;
 }
 
-div#header img {
+div#header a#trunk-logo img {
   position:absolute;
   left:20px;
   top:56px;
@@ -33,13 +33,19 @@ div#header img {
 div#header div#contact-details {
   color:#b6b6b6;
   float:right;
-  margin:20px 15px 0 0;
+  margin:20px 55px 0 0;
+}
+
+div#header img#elephant {
+  float:right;
+  clear:right;
+  margin:10px 15px 0 0;
 }
 
 div#movies-background {
   padding:5px;
   background-color:#000;
-  height:290px;
+  height:300px;
 }
 
 div#movies-frame{
