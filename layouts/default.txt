@@ -29,30 +29,30 @@ filter:    erb
     <div id='movies-frame'>
       <div id='movies-window'>
         <div id='movies' style='margin-left:-75px'>
+          <%
+          urls = [
+            'http://vimeo.com/moogaloop.swf?clip_id=7044832&amp;server=vimeo.com&amp;show_title=1&amp;show_byline=1&amp;show_portrait=0&amp;color=00ADEF&amp;fullscreen=1',
+            'http://vimeo.com/moogaloop.swf?clip_id=7044832&amp;server=vimeo.com&amp;show_title=1&amp;show_byline=1&amp;show_portrait=0&amp;color=00ADEF&amp;fullscreen=1',
+            'http://vimeo.com/moogaloop.swf?clip_id=7044832&amp;server=vimeo.com&amp;show_title=1&amp;show_byline=1&amp;show_portrait=0&amp;color=00ADEF&amp;fullscreen=1'
+          ].each do |url|
+          %>
           <object width="500" height="281">
             <param name="allowfullscreen" value="true" />
             <param name="allowscriptaccess" value="always" />
-            <param name="movie" value="http://vimeo.com/moogaloop.swf?clip_id=7044832&amp;server=vimeo.com&amp;show_title=1&amp;show_byline=1&amp;show_portrait=0&amp;color=00ADEF&amp;fullscreen=1" />
-            <embed src="http://vimeo.com/moogaloop.swf?clip_id=7044832&amp;server=vimeo.com&amp;show_title=1&amp;show_byline=1&amp;show_portrait=0&amp;color=00ADEF&amp;fullscreen=1" type="application/x-shockwave-flash" allowfullscreen="true" allowscriptaccess="always" width="500" height="281"></embed>
+            <param name="movie" value="<%= url %>" />
+            <embed src="<%= url %>" type="application/x-shockwave-flash" allowfullscreen="true" allowscriptaccess="always" width="500" height="281"></embed>
           </object>
-          <object width="500" height="281">
-            <param name="allowfullscreen" value="true" />
-            <param name="allowscriptaccess" value="always" />
-            <param name="movie" value="http://vimeo.com/moogaloop.swf?clip_id=7044832&amp;server=vimeo.com&amp;show_title=1&amp;show_byline=1&amp;show_portrait=0&amp;color=00ADEF&amp;fullscreen=1" />
-            <embed src="http://vimeo.com/moogaloop.swf?clip_id=7044832&amp;server=vimeo.com&amp;show_title=1&amp;show_byline=1&amp;show_portrait=0&amp;color=00ADEF&amp;fullscreen=1" type="application/x-shockwave-flash" allowfullscreen="true" allowscriptaccess="always" width="500" height="281"></embed>
-          </object>
-          <object width="500" height="281">
-            <param name="allowfullscreen" value="true" />
-            <param name="allowscriptaccess" value="always" />
-            <param name="movie" value="http://vimeo.com/moogaloop.swf?clip_id=7044832&amp;server=vimeo.com&amp;show_title=1&amp;show_byline=1&amp;show_portrait=0&amp;color=00ADEF&amp;fullscreen=1" />
-            <embed src="http://vimeo.com/moogaloop.swf?clip_id=7044832&amp;server=vimeo.com&amp;show_title=1&amp;show_byline=1&amp;show_portrait=0&amp;color=00ADEF&amp;fullscreen=1" type="application/x-shockwave-flash" allowfullscreen="true" allowscriptaccess="always" width="500" height="281"></embed>
-          </object>
+          <% end %>
         </div>
       </div>
-      <div id="movies-nagivation">
-        <a href='#' id='scroll-left'><img src="images/arrow_l.png" alt="scroll"/></a>
-        <a href='#' id='scroll-right'><img src="images/arrow_r.png" alt="scroll"/></a>
-      </div>
+      <ul id="movies-nagivation">
+        <li><a href='#' id='scroll-left'>scroll left</a></li>
+        <li><a href='#' class='scroll-ball selected'>scroll to here</a></li>
+        <% 2.upto(urls.size).each do %>
+          <li><a href='#' class='scroll-ball'>scroll to here</a></li>
+        <% end %>
+        <li><a href='#' id='scroll-right'>scroll right</a></li>
+      </ul>
     </div>
   </div>
 </body>

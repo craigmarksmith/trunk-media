@@ -54,15 +54,6 @@ div#movies-frame{
   width:550px;
 }
 
-div#movies-frame div#movies-nagivation a {
-  border:0;
-  outline:none;
-}
-
-div#movies-frame div#movies-nagivation a img{
-  border:0;
-}
-
 div#movies-window {
   background-image:url('../images/video-background.png');
   background-repeat:no-repeat;
@@ -84,3 +75,44 @@ div#movies object{
   margin:0;
   border:0;
 }
+
+ul#movies-nagivation li {
+  float:left;
+  height:50px;
+  width:90px;
+}
+
+ul#movies-nagivation li a {
+  height:0;
+  float:left;
+  overflow:hidden;
+  
+  padding-top:55px;
+  width:100%;
+  
+  background-image:url('../images/scroll-ball.png');
+  background-repeat:no-repeat;
+  background-position:center;
+}
+
+ul#movies-nagivation li a.scroll-ball {
+  padding-top:45px;
+}
+
+ul#movies-nagivation li a.selected {
+  background-image:url('../images/scroll-ball-selected.png');
+}
+
+ul#movies-nagivation li a#scroll-left {
+  background-image:url('../images/arrow-l.png');
+}
+
+ul#movies-nagivation li a#scroll-right {
+  background-image:url('../images/arrow-r.png');
+}
+
+/*a.scroll-ball {*/
+/*  background-image:url('../images/scroll-ball.png');*/
+/*  background-repeat:no-repeat;*/
+/*  background-position:center;*/
+/*}*/
