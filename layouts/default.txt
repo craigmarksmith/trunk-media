@@ -25,35 +25,7 @@ filter:    erb
     <div id='contact-details'>(+44) (0)208 351 7257 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;info@trunkfilms.com</div>
     <img src="images/oli.png" alt="elephant" id="elephant"/>
   </div>
-  <div id='movies-background'>
-    <div id='movies-frame'>
-      <div id='movies-window'>
-        <div id='movies' style='margin-left:-75px'>
-          <%
-          urls = [
-            'http://vimeo.com/moogaloop.swf?clip_id=7044832&amp;server=vimeo.com&amp;show_title=1&amp;show_byline=1&amp;show_portrait=0&amp;color=00ADEF&amp;fullscreen=1',
-            'http://vimeo.com/moogaloop.swf?clip_id=7044832&amp;server=vimeo.com&amp;show_title=1&amp;show_byline=1&amp;show_portrait=0&amp;color=00ADEF&amp;fullscreen=1',
-            'http://vimeo.com/moogaloop.swf?clip_id=7044832&amp;server=vimeo.com&amp;show_title=1&amp;show_byline=1&amp;show_portrait=0&amp;color=00ADEF&amp;fullscreen=1'
-          ].each do |url|
-          %>
-          <object width="500" height="281">
-            <param name="allowfullscreen" value="true" />
-            <param name="allowscriptaccess" value="always" />
-            <param name="movie" value="<%= url %>" />
-            <embed src="<%= url %>" type="application/x-shockwave-flash" allowfullscreen="true" allowscriptaccess="always" width="500" height="281"></embed>
-          </object>
-          <% end %>
-        </div>
-      </div>
-      <ul id="movies-nagivation">
-        <li><a href='#' id='scroll-left'>scroll left</a></li>
-        <li><a href='#' class='scroll-ball selected'>0</a></li>
-        <% 1.upto(urls.size-1).each do |n| %>
-          <li><a href='#' class='scroll-ball'><%= n %></a></li>
-        <% end %>
-        <li><a href='#' id='scroll-right'>scroll right</a></li>
-      </ul>
-    </div>
-  </div>
+  
+  <%= @content %>
 </body>
 </html>
