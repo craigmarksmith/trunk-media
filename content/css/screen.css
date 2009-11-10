@@ -57,7 +57,6 @@ div#movies-frame{
 div#movies-window {
   background-image:url('../images/video-background.png');
   background-repeat:no-repeat;
-  background-attachment:fixed;
   background-position:center center;
 
   height:290px;
