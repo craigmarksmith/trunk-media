@@ -18,7 +18,7 @@ TrunkFilm.Movies = {
   },
 
   scrollRight: function(){
-    if(current_position < ($('#movies object').size()-1)){
+    if(current_position < ($('.movie').size()-1)){
       TrunkFilm.Movies.scroll('-=703px');
       current_position += 1;
       TrunkFilm.Movies.selectScrollBall(current_position, current_position-1);
@@ -29,7 +29,7 @@ TrunkFilm.Movies = {
   scrollToMe: function(){
 
     var old_current_position = current_position;
-    current_position = parseInt(this.text);
+    current_position = parseInt(this.innerHTML);
 
     if(old_current_position == current_position)
       return;
