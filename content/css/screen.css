@@ -70,10 +70,11 @@ div#movies {
   width:1000%; /* needs to be massive so all the vids can cram in to it.*/
 }
 
-div#movies object{
+div#movies .movie{
   padding:0 100px;
   margin:0;
   border:0;
+  display:inline;
 }
 
 ul#movies-nagivation li {
