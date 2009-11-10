@@ -57,7 +57,8 @@ div#movies-frame{
 div#movies-window {
   background-image:url('../images/video-background.png');
   background-repeat:no-repeat;
-  background-position:center;
+  background-attachment:fixed;
+  background-position:center center;
 
   height:290px;
   overflow:hidden;
@@ -77,6 +78,12 @@ div#movies .movie{
   display:inline;
 }
 
+ul#movies-nagivation {
+  margin:0;
+  padding:0;
+  margin-left:43px;
+}
+
 ul#movies-nagivation li {
   float:left;
   height:50px;
@@ -92,10 +99,11 @@ ul#movies-nagivation li a {
   width:100%;
   background-image:url('../images/scroll-ball.png');
   background-repeat:no-repeat;
-  background-position:center;
+  background-position:top;
 }
 
 ul#movies-nagivation li a.scroll-ball {
+  margin-top:10px;
   padding-top:45px;
 }
 
