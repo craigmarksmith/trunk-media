@@ -17,11 +17,11 @@ filter:
         ].each do |url|
         %>
         <div class='movie'>
-          <object width="500" height="281">
+          <object width="700" height="394">
             <param name="allowfullscreen" value="true" />
             <param name="allowscriptaccess" value="always" />
             <param name="movie" value="<%= url %>" />
-            <embed src="<%= url %>" type="application/x-shockwave-flash" allowfullscreen="true" allowscriptaccess="always" width="500" height="281"></embed>
+            <embed src="<%= url %>" type="application/x-shockwave-flash" allowfullscreen="true" allowscriptaccess="always" width="700" height="394"></embed>
           </object>
         </div>
         <% end %>

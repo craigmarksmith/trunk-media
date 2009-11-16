@@ -1,5 +1,6 @@
 TrunkFilm = {}
 TrunkFilm.Movies = {
+  amount_to_move: 903,
   
   init: function(){
     current_position = 0;
@@ -10,7 +11,7 @@ TrunkFilm.Movies = {
 
   scrollLeft: function(){
     if(current_position > 0){
-      TrunkFilm.Movies.scroll('+=703px');
+      TrunkFilm.Movies.scroll('+='+TrunkFilm.Movies.amount_to_move+'px');
       current_position -= 1;
       TrunkFilm.Movies.selectScrollBall(current_position, current_position+1);
     }
@@ -19,7 +20,7 @@ TrunkFilm.Movies = {
 
   scrollRight: function(){
     if(current_position < ($('.movie').size()-1)){
-      TrunkFilm.Movies.scroll('-=703px');
+      TrunkFilm.Movies.scroll('-='+TrunkFilm.Movies.amount_to_move+'px');
       current_position += 1;
       TrunkFilm.Movies.selectScrollBall(current_position, current_position-1);
     }
@@ -39,7 +40,7 @@ TrunkFilm.Movies = {
 
     sign = old_current_position < current_position ? '+' : '-';
     amount_moved = old_current_position < current_position ? old_current_position-current_position : current_position-old_current_position
-    amount_to_move = 703*amount_moved;
+    amount_to_move = TrunkFilm.Movies.amount_to_move*amount_moved;
     TrunkFilm.Movies.scroll(sign+'='+amount_to_move+'px');
 
     return false;
