@@ -22,6 +22,11 @@ filter:    erb
 <body>
   <div id='header'>
     <a href="/" id='trunk-logo'><img src="images/trunk-logo.png" alt="trunk films logo"/></a>
+    <ul id="menu">
+      <li id="about-us">about us.</li>
+      <li id="contact">contact.</li>
+      <li id="blog">blog.</li>
+    </ul>
     <div id='contact-details'>(+44) (0)208 351 7257 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;info@trunkfilms.com</div>
     <img src="images/oli.png" alt="elephant" id="elephant"/>
   </div>
