@@ -18,9 +18,6 @@ div#header {
   width:100%;
   height:180px;
   margin-bottom:80px;
-  background-image:url('../images/bluewood.png');
-  background-repeat:no-repeat;
-  background-position:center left;
 }
 
 div#header a#trunk-logo img {
