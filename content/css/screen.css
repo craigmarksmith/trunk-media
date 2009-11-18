@@ -52,20 +52,24 @@ ul#menu li {
   list-style-type:none;
   color:#FFF;
   padding:2px 2px 2px 400px;
+  margin-bottom:1px;
+  border-top:1px solid black;
+  border-bottom:1px solid black;
+  border-right:1px solid black;
 }
 
 ul#menu li#about-us {
-  background-color:red;
+  background-color:#214219;
   width:120px;
 }
 
 ul#menu li#contact {
-  background-color:green;
+  background-color:#3A1942;
   width:160px;
 }
 
 ul#menu li#blog {
-  background-color:blue;
+  background-color:#422519;
   width:100px;
 }
 
